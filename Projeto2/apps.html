@@ -4,28 +4,38 @@
 <head>
     <meta charset="utf-8" />
     <title>TecBlog - Apps</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+
 </head>
 
 <body>
-    <div id="navegacao">
+    <header>
         <div class="area">
             <h1 id="logo"><span class="verde">Tec</span>Blog</h1>
-            <div id="menu">
+            <nav>
                 <a href="index.html">home</a>
                 <a href="games.html">games</a>
                 <a href="apps.html">apps</a>
                 <a href="eletronicos.html">eletronicos</a>
-            </div>
+            </nav>
+            <!--nav-->
         </div>
-    </div>
+        <!--area-->
+    </header>
+    <!--navegacao-->
 
-    <div id="principal">
+    <article>
         <div class="area">
-            <div id="postagem">
+            
+            <section>
                 <h2>Titulo da Postagem (Apps)</h2>
-                <span class="data-postagem">postado em 12 de março de 2015</span>
-                <img src="img/imagem5.png" alt="Imagem 5">
+                <span class="data-postagem">postado em <time datetime="12-03-2015">12 de março de 2015</time></span>
+                <img src="img/imagem3.png" alt="Imagem 3">
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Donec rutrum, enim sed fringilla commodo, lectus libero ultrices neque, fermentum rutrum sem purus
@@ -34,24 +44,38 @@
                     Maecenas viverra feugiat dolor non blandit.
                     Proin tempus convallis ante eget ultricies.
                     Nam ac eros consectetur, rutrum magna a, lacinia est.
-                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                    Nullam nec sagittis ligula, non gravida ipsum.
-                    Sed eu ligula ornare, efficitur felis et, sodales nulla.
-                    Donec condimentum cursus lacinia.
-                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
                 </p>
                 <span class="assinatura-post">Postado por Fulano de Tal</span>
-            </div>
+            </section>
+            <!--postagem-->
+            
+            <section>
+                <h2>Titulo da Postagem (Apps)</h2>
+                <span class="data-postagem">postado em <time datetime="12-03-2015">12 de março de 2015</time></span>
+                <img src="img/imagem4.png" alt="Imagem 4">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Donec rutrum, enim sed fringilla commodo, lectus libero ultrices neque, fermentum rutrum sem purus
+                    a lectus.
+                    Sed eu tincidunt ante.
+                    Maecenas viverra feugiat dolor non blandit.
+                    Proin tempus convallis ante eget ultricies.
+                    Nam ac eros consectetur, rutrum magna a, lacinia est.
+                </p>
+                <span class="assinatura-post">Postado por Fulano de Tal</span>
+            </section>
             <!--postagem-->
         </div>
-    </div>
-    </div>
-    <div id="rodape">
+        <!--area---->
+    </article>
+    <!--principal---->
+
+    <footer>
         <div class="area">
-            <h4>Todos os Direitos Reservados</h4>
+            <h4>Todos os Direitos Reservados&copy; - 2018</h4>
         </div>
         <!--area---->
-    </div>
+    </footer>
     <!--rodape---->
 </body>
 
