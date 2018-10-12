@@ -1,0 +1,47 @@
+.font-logo{
+    font-family: 'Swis721 Blk BT', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.logomarca{
+    display: inline;
+    font-size: 32px;
+    position: relative;
+    top: 10px;
+}
+.laranja{
+    color: #f8aa00;
+}
+.verde{
+    color: #2b818e;
+}
+.img-principal{
+    margin-bottom: 10px;
+    width: 100%;
+    height: 422px;
+}
+.paragrafo-principal, .paragrafo-sobre{
+    text-align: justify;
+}
+footer{
+    text-align: center;
+}
+.barra-laranja, .barra-verde
+{
+    height: 10px;
+}
+.barra-laranja
+{
+    background-color: #f8aa00;
+    border-right: 2px solid #fff;
+}
+.barra-verde
+{
+    background-color: #2b818e;
+}
+#map{
+    margin: 10px 0;
+    height: 400px;
+}
+.link-verde a{
+    color: #2b818e;
+    font-weight: bold;
+}

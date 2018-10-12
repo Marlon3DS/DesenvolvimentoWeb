@@ -4,131 +4,159 @@
 <head>
     <meta charset="utf-8" />
     <title>TecBlog - O seu blog de tecnologia</title>
-    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap -->
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
 </head>
 
 <body>
-    <header>
-        <div class="area">
-            <h1 id="logo"><span class="verde">Tec</span>Blog</h1>
-            <nav>
-                <a href="index.html">home</a>
-                <a href="games.html">games</a>
-                <a href="apps.html">apps</a>
-                <a href="eletronicos.html">eletronicos</a>
-            </nav>
-            <!--nav-->
+    <!-- Barra navegação -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+          
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-navegacao">
+              <span class="sr-only">Alternar Menu</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="navbar-brand"><span class="verde">Tec</span>Blog</a>
+          </div>
+  
+          <div class="collapse navbar-collapse" id="barra-navegacao">
+  
+            <ul class="nav navbar-nav navbar-right">
+              <li> <a href="index.html">home</a> </li>
+              <li> <a href="games.html">games</a> </li>
+              <li> <a href="apps.html">apps</a> </li>
+              <li> <a href="eletronicos.html">eletronicos</a> </li>
+            </ul>
+  
+          </div>
+  
         </div>
-        <!--area-->
-    </header>
-    <!--navegacao-->
+    </nav>
+    <!--nav-->
 
     <article>
-        <div class="area">
-            
-            <section>
-                <h2>Titulo da Postagem</h2>
-                <span class="data-postagem">postado em <time datetime="12-03-2015">12 de março de 2015</time></span>
-                <img src="img/imagem1.png" alt="Imagem 1">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Donec rutrum, enim sed fringilla commodo, lectus libero ultrices neque, fermentum rutrum sem purus
-                    a lectus.
-                    Sed eu tincidunt ante.
-                    Maecenas viverra feugiat dolor non blandit.
-                    Proin tempus convallis ante eget ultricies.
-                    Nam ac eros consectetur, rutrum magna a, lacinia est.
-                </p>
-                <span class="assinatura-post">Postado por Fulano de Tal</span>
-            </section>
-            <!--postagem-->
-            
-            <section>
-                <h2>Titulo da Postagem</h2>
-                <span class="data-postagem">postado em <time datetime="12-03-2015">12 de março de 2015</time></span>
-                <img src="img/imagem2.png" alt="Imagem 2">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Donec rutrum, enim sed fringilla commodo, lectus libero ultrices neque, fermentum rutrum sem purus
-                    a lectus.
-                    Sed eu tincidunt ante.
-                    Maecenas viverra feugiat dolor non blandit.
-                    Proin tempus convallis ante eget ultricies.
-                    Nam ac eros consectetur, rutrum magna a, lacinia est.
-                </p>
-                <span class="assinatura-post">Postado por Fulano de Tal</span>
-            </section>
-            <!--postagem-->
+        <div class="container">
+            <div class="row">
+                <section class="col-xs-12 col-sm-4 col-md-6">
+                    <h2>Titulo da Postagem</h2>
+                    <span class="data-postagem">postado em <time datetime="12-03-2015">12 de março de 2015</time></span>
+                    <img src="img/imagem1.png" alt="Imagem 1">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec rutrum, enim sed fringilla commodo, lectus libero ultrices neque, fermentum rutrum sem
+                        purus
+                        a lectus.
+                        Sed eu tincidunt ante.
+                        Maecenas viverra feugiat dolor non blandit.
+                        Proin tempus convallis ante eget ultricies.
+                        Nam ac eros consectetur, rutrum magna a, lacinia est.
+                    </p>
+                    <span class="assinatura-post">Postado por Fulano de Tal</span>
+                </section>
+                <!--postagem-->
 
-            <section>
-                <h2>Titulo da Postagem</h2>
-                <span class="data-postagem">postado em <time datetime="12-03-2015">12 de março de 2015</time></span>
-                <img src="img/imagem3.png" alt="Imagem 3">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Donec rutrum, enim sed fringilla commodo, lectus libero ultrices neque, fermentum rutrum sem purus
-                    a lectus.
-                    Sed eu tincidunt ante.
-                    Maecenas viverra feugiat dolor non blandit.
-                    Proin tempus convallis ante eget ultricies.
-                    Nam ac eros consectetur, rutrum magna a, lacinia est.
-                </p>
-                <span class="assinatura-post">Postado por Fulano de Tal</span>
-            </section>
-            <!--postagem-->
+                <section class="col-xs-12 col-sm-4 col-md-6">
+                    <h2>Titulo da Postagem</h2>
+                    <span class="data-postagem">postado em <time datetime="12-03-2015">12 de março de 2015</time></span>
+                    <img src="img/imagem2.png" alt="Imagem 2">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec rutrum, enim sed fringilla commodo, lectus libero ultrices neque, fermentum rutrum sem
+                        purus
+                        a lectus.
+                        Sed eu tincidunt ante.
+                        Maecenas viverra feugiat dolor non blandit.
+                        Proin tempus convallis ante eget ultricies.
+                        Nam ac eros consectetur, rutrum magna a, lacinia est.
+                    </p>
+                    <span class="assinatura-post">Postado por Fulano de Tal</span>
+                </section>
+                <!--postagem-->
 
-            <section>
-                <h2>Titulo da Postagem</h2>
-                <span class="data-postagem">postado em <time datetime="12-03-2015">12 de março de 2015</time></span>
-                <img src="img/imagem4.png" alt="Imagem 4">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Donec rutrum, enim sed fringilla commodo, lectus libero ultrices neque, fermentum rutrum sem purus
-                    a lectus.
-                    Sed eu tincidunt ante.
-                    Maecenas viverra feugiat dolor non blandit.
-                    Proin tempus convallis ante eget ultricies.
-                    Nam ac eros consectetur, rutrum magna a, lacinia est.
-                </p>
-                <span class="assinatura-post">Postado por Fulano de Tal</span>
-            </section>
-            <!--postagem-->
+                <section class="col-xs-12 col-sm-4 col-md-6">
+                    <h2>Titulo da Postagem</h2>
+                    <span class="data-postagem">postado em <time datetime="12-03-2015">12 de março de 2015</time></span>
+                    <img src="img/imagem3.png" alt="Imagem 3">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec rutrum, enim sed fringilla commodo, lectus libero ultrices neque, fermentum rutrum sem
+                        purus a lectus.
+                        Sed eu tincidunt ante.
+                        Maecenas viverra feugiat dolor non blandit.
+                        Proin tempus convallis ante eget ultricies.
+                        Nam ac eros consectetur, rutrum magna a, lacinia est.
+                    </p>
+                    <span class="assinatura-post">Postado por Fulano de Tal</span>
+                </section>
+                <!--postagem-->
 
-            <section>
-                <h2>Titulo da Postagem</h2>
-                <span class="data-postagem">postado em <time datetime="12-03-2015">12 de março de 2015</time></span>
-                <img src="img/imagem5.png" alt="Imagem 5">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Donec rutrum, enim sed fringilla commodo, lectus libero ultrices neque, fermentum rutrum sem purus
-                    a lectus.
-                    Sed eu tincidunt ante.
-                    Maecenas viverra feugiat dolor non blandit.
-                    Proin tempus convallis ante eget ultricies.
-                    Nam ac eros consectetur, rutrum magna a, lacinia est.
-                </p>
-                <span class="assinatura-post">Postado por Fulano de Tal</span>
-            </section>
-            <!--postagem-->
+                <section class="col-xs-12 col-sm-4 col-md-6">
+                    <h2>Titulo da Postagem</h2>
+                    <span class="data-postagem">postado em <time datetime="12-03-2015">12 de março de 2015</time></span>
+                    <img src="img/imagem4.png" alt="Imagem 4">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec rutrum, enim sed fringilla commodo, lectus libero ultrices neque, fermentum rutrum sem
+                        purus
+                        a lectus.
+                        Sed eu tincidunt ante.
+                        Maecenas viverra feugiat dolor non blandit.
+                        Proin tempus convallis ante eget ultricies.
+                        Nam ac eros consectetur, rutrum magna a, lacinia est.
+                    </p>
+                    <span class="assinatura-post">Postado por Fulano de Tal</span>
+                </section>
+                <!--postagem-->
 
+                <section class="col-xs-12 col-sm-4 col-md-6">
+                    <h2>Titulo da Postagem</h2>
+                    <span class="data-postagem">postado em <time datetime="12-03-2015">12 de março de 2015</time></span>
+                    <img src="img/imagem5.png" alt="Imagem 5">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec rutrum, enim sed fringilla commodo, lectus libero ultrices neque, fermentum rutrum sem
+                        purus
+                        a lectus.
+                        Sed eu tincidunt ante.
+                        Maecenas viverra feugiat dolor non blandit.
+                        Proin tempus convallis ante eget ultricies.
+                        Nam ac eros consectetur, rutrum magna a, lacinia est.
+                    </p>
+                    <span class="assinatura-post">Postado por Fulano de Tal</span>
+                </section>
+                <!--postagem-->
+            </div>
+            <!--row-->
         </div>
-        <!--area---->
+        <!--container---->
     </article>
     <!--principal---->
 
     <footer>
-        <div class="area">
-            <h4>Todos os Direitos Reservados&copy; - 2018</h4>
+        <div class="container">
+            <div class="row">
+                <h4>Todos os Direitos Reservados&copy; - 2018</h4>
+            </div>
         </div>
         <!--area---->
     </footer>
     <!--rodape---->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>

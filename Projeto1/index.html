@@ -1,51 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <title>JM Viagens - Página Principal</title>
+    <title>JM Viagens - Home</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <table width="900" align="center">
-        <tr>
-            <td><img src="imagens/logo.png" alt="Logo"></td>
-            <td align="right">
-                <a href="index.html">Home</a>
-                <a href="quem-somos.html">Quem Somos</a>
-                <a href="contato.html">Contato</a>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2"><img src="imagens/principal.png" alt="imagem-principal"></td>
-        </tr>
-        <tr>
-            <td colspan="2" align="justify">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Quisque ultricies enim ut augue interdum volutpat. 
-                    Nam vitae urna condimentum, auctor nulla eu, convallis ante. 
-                    Pellentesque cursus viverra sem sed tristique. 
-                    Maecenas laoreet ut arcu quis faucibus. 
-                    Nullam pretium nisi augue, et interdum libero ullamcorper a. 
-                    Nulla sodales lacus non sapien congue fermentum. 
-                    Morbi sagittis quis nisl eu vestibulum. 
-                    Nam sagittis metus eget sollicitudin sollicitudin.</p>
-                <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                    Ut volutpat orci risus, ut scelerisque urna ultricies consectetur. 
-                    Duis non maximus sem, sit amet pulvinar mi. 
-                    Donec vitae ex tristique libero accumsan tempor. 
-                    Praesent consectetur eros sit amet mi pulvinar, sit amet ultrices nunc feugiat. 
-                    Mauris ac volutpat turpis. 
-                    Integer ac felis sed enim congue eleifend. 
-                    Integer vitae turpis erat. 
-                    Maecenas pulvinar malesuada facilisis. 
-                    Vivamus faucibus mi at erat facilisis pretium. 
-                    Donec ac orci quis justo venenatis blandit. 
-                    Sed tempus quam a velit tincidunt, vel bibendum neque eleifend. 
-                    Nullam feugiat elit ac arcu dapibus, porttitor imperdiet ante porta.</p>
-            </td>
-        </tr>
-        <tr>
-            <td align="center" colspan="2"><h4>Todos os direitos reservados</h4></td>
-        </tr>
-    </table>
+
+    <nav class="navbar navbar-expand container">
+        <a class="navbar-brand" href="index.html">
+            <img src="imagens/logo-transparent.png" alt="logo">
+            <h1 class="logomarca font-logo laranja">JM <span class="verde">VIAGENS</span></h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse link-verde" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contato.html">Contato</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="quem-somos.html">Quem Somos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <article class="container">
+        <div class="row">
+            <div class="barra-laranja col-md-3"></div>
+            <div class="barra-verde col-md-9"></div>
+        </div>
+        <div class="row">
+            <img src="imagens/principal.png" class="img-fluid img-principal" alt="Principal">
+        </div>
+        <div class="row">
+            <p class="paragrafo-principal">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Quisque ultricies enim ut augue interdum volutpat.
+                Nam vitae urna condimentum, auctor nulla eu, convallis ante.
+                Pellentesque cursus viverra sem sed tristique.
+                Maecenas laoreet ut arcu quis faucibus.
+                Nullam pretium nisi augue, et interdum libero ullamcorper a.
+                Nulla sodales lacus non sapien congue fermentum.
+                Morbi sagittis quis nisl eu vestibulum.
+                Nam sagittis metus eget sollicitudin sollicitudin.</p>
+            <p class="paragrafo-principal">Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+                ridiculus mus.
+                Ut volutpat orci risus, ut scelerisque urna ultricies consectetur.
+                Duis non maximus sem, sit amet pulvinar mi.
+                Donec vitae ex tristique libero accumsan tempor.
+                Praesent consectetur eros sit amet mi pulvinar, sit amet ultrices nunc feugiat.
+                Mauris ac volutpat turpis.
+                Integer ac felis sed enim congue eleifend.
+                Integer vitae turpis erat.
+                Maecenas pulvinar malesuada facilisis.
+                Vivamus faucibus mi at erat facilisis pretium.
+                Donec ac orci quis justo venenatis blandit.
+                Sed tempus quam a velit tincidunt, vel bibendum neque eleifend.
+                Nullam feugiat elit ac arcu dapibus, porttitor imperdiet ante porta.</p>
+        </div>
+    </article>
+
+    <footer>
+        <h4>Todos os direitos reservados</h4>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

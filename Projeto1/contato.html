@@ -1,39 +1,113 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
     <title>JM Viagens - Contato</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    <table width="900" align="center">
-        <tr>
-            <td><img src="imagens/logo.png" alt="Logo"></td>
-            <td align="right">
-                <a href="index.html">Home</a>
-                <a href="quem-somos.html">Quem Somos</a>
-                <a href="contato.html">Contato</a>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2"><img src="imagens/contato.png" alt="imagem-principal"></td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <h2>contato@jmviagens.com.br</h2>
-                <p  align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Quisque ultricies enim ut augue interdum volutpat. 
-                    Nam vitae urna condimentum, auctor nulla eu, convallis ante. 
-                    Pellentesque cursus viverra sem sed tristique. 
-                    Maecenas laoreet ut arcu quis faucibus. 
-                    Nullam pretium nisi augue, et interdum libero ullamcorper a. 
-                    Nulla sodales lacus non sapien congue fermentum. 
-                    Morbi sagittis quis nisl eu vestibulum. 
-                    Nam sagittis metus eget sollicitudin sollicitudin.</p>
-            </td>
-        </tr>
-        <tr>
-            <td align="center" colspan="2"><h4>Todos os direitos reservados</h4></td>
-        </tr>
-    </table>
+
+    <nav class="navbar navbar-expand container">
+        <a class="navbar-brand" href="index.html">
+            <img src="imagens/logo-transparent.png" alt="logo">
+            <h1 class="logomarca font-logo laranja">JM <span class="verde">VIAGENS</span></h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse link-verde" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="contato.html">Contato</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="quem-somos.html">Quem Somos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <article class="container">
+        <div class="row">
+            <div class="barra-laranja col-md-3"></div>
+            <div class="barra-verde col-md-9"></div>
+        </div>
+        <div class="row">
+            <h3 class="font-logo laranja">Contato</h3>
+        </div>
+        <div class="row">
+            <div class="col-md-7">
+                <h4>Vamos Conversar</h4>
+                <form>
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" class="form-control" name="nome" id="nome" aria-describedby="helpId"
+                            placeholder="Digite seu Nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" class="form-control" name="email" id="email" aria-describedby="helpId"
+                            placeholder="Digite seu Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea class="form-control" name="mensagem" id="mensagem" aria-describedby="helpId"
+                            placeholder="Digite sua Mensagem"></textarea>
+                    </div>
+                    <input type="submit" class="btn btn-info" value="Enviar">
+                </form>
+            </div>
+
+            <div class="col-md-5">
+                <h4>Av. Non Exists, sem número</h4>
+                <h4>Lapa, São Paulo - SP / CEP.: 11354-015</h4>
+                <h4>contato@jmviagens.com.br</h4>
+                <h4>(11) 99128-7346 / (11) 4128-7346</h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <div id="map"  class="col-md-12"></div>
+        </div>
+    </article>
+
+    <footer>
+        <h4>Todos os direitos reservados</h4>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+    <script>
+        function myMap() {
+            var mapOptions = {
+                center: new google.maps.LatLng(51.5, -0.12),
+                zoom: 10,
+                mapTypeId: google.maps.MapTypeId.HYBRID
+            }
+            var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
 </body>
+
 </html>
